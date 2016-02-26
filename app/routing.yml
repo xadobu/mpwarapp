@@ -1,0 +1,10 @@
+---
+routes:
+  - method: "get"
+    uri: "/users"
+    controller: "\\Mpwar16App\\Controllers\\UserController"
+    function: "index"
+  - method: "get"
+    uri: "/users/{id}"
+    controller: "\\Mpwar16App\\Controllers\\UserController"
+    function: "show"

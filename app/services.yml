@@ -1,0 +1,28 @@
+---
+services:
+  - name: "router"
+    class: "\\Mpwarfwk\\Component\\Router\\Router"
+    arguments:
+    - "@parser"
+    - "/var/www/html/Mpwar16App/app/routing.yml"
+    tags:
+    public: true
+    singleton: false
+  - name: "parser"
+    class: "\\Mpwarfwk\\Component\\Parser\\YAMLParser"
+    arguments:
+    tags:
+    public: false
+    singleton: false
+  - name: "twig_templating"
+    class: "\\Mpwarfwk\\Component\\Templating\\TwigTemplating"
+    arguments:
+    tags:
+    public: true
+    singleton: false
+  - name: "smarty_templating"
+    class: "\\Mpwarfwk\\Component\\Templating\\SmartyTemplating"
+    arguments:
+    tags:
+    public: true
+    singleton: true
