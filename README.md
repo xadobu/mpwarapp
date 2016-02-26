@@ -1,4 +1,4 @@
-# mpwarfwk
+# MPWAR16App
 Basic application MPWAR16App using MPWAR Framework
 
 ## Instalación
