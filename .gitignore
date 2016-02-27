@@ -1,1 +1,4 @@
 vendor/
+public/cache
+public/templates_c
+templates/cache

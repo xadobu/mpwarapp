@@ -178,7 +178,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/xadobu/mpwarfwk.git",
-                "reference": "cce9633a0af93f4447c7e4ebea2ab5d9a7ebfe9b"
+                "reference": "0f6f25eab369b86281f3a0924348b7d5fa548676"
             },
             "require": {
                 "php": "^5.6 || ^7.0",
@@ -196,7 +196,7 @@
                 "proprietary"
             ],
             "description": "MPWAR Framework",
-            "time": "2016-02-27 12:17:21"
+            "time": "2016-02-27 13:21:20"
         }
     ],
     "packages-dev": [],
