@@ -11,13 +11,26 @@ class UserController extends Controller
 {
     public function index(Request $request)
     {
-        $templating = $this->container->get('twig_templating');
-        $templating->setTemplatesPath(__DIR__.'/../../templates/views');
-        return new Response($request->getHeader(), $templating->show('login'));
+        $sample = array(
+            "users" => array(
+                array(
+                    "name" => "John",
+                    "surname" => "Doe",
+                    "age" => 40
+                ),
+                array(
+                    "name" => "Jane",
+                    "surname" => "Doe",
+                    "age" => 35
+                )
+            )
+        );
+        return new JsonResponse($request->getHeader(), $sample);
     }
 
     public function show(Request $request)
     {
-        return new JsonResponse(null, "{text: 'Test JSONResponse', userID: {$request->get('id')}}");
+
+        return new JsonResponse($request->getHeader(), "{text: 'Test JSONResponse', userID: {$request->get('id')}}");
     }
 }

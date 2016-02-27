@@ -5,6 +5,7 @@ services:
     arguments:
     - "@parser"
     - "/var/www/html/Mpwar16App/app/routing.yml"
+    - "@router_profiler"
     tags:
     public: true
     singleton: false
@@ -24,5 +25,27 @@ services:
     class: "\\Mpwarfwk\\Component\\Templating\\SmartyTemplating"
     arguments:
     tags:
+    public: true
+    singleton: true
+  - name: "database_pdo"
+    class: "\\Mpwarfwk\\Component\\Database\\Db"
+    arguments:
+    - {host: localhost, db_name: mpwar, username: root, password: vagrantpass}
+    - "@db_profiler"
+    tags:
+    public: true
+    singleton: false
+  - name: "db_profiler"
+    class: "\\Mpwarfwk\\Component\\Database\\DBProfiler"
+    arguments:
+    tags:
+    - profiling
+    public: true
+    singleton: true
+  - name: "router_profiler"
+    class: "\\Mpwarfwk\\Component\\Router\\RouterProfiler"
+    arguments:
+    tags:
+    - profiling
     public: true
     singleton: true

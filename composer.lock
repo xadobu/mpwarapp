@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6e8bab9f605faa3881aaaace948ca458",
-    "content-hash": "c30938dd0c1c4a13c993828a8de239fe",
+    "hash": "a05f1e9728d0b54563822f7d16a39f8a",
+    "content-hash": "71df663010261c2bf48eb42ad214b60f",
     "packages": [
         {
             "name": "smarty/smarty",
@@ -178,7 +178,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/xadobu/mpwarfwk.git",
-                "reference": "e8aec7c322a0a9d4aa9b9803a14d0163bed10225"
+                "reference": "cce9633a0af93f4447c7e4ebea2ab5d9a7ebfe9b"
             },
             "require": {
                 "php": "^5.6 || ^7.0",
@@ -196,7 +196,7 @@
                 "proprietary"
             ],
             "description": "MPWAR Framework",
-            "time": "2016-02-26 15:10:30"
+            "time": "2016-02-27 12:17:21"
         }
     ],
     "packages-dev": [],

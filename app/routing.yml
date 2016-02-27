@@ -1,6 +1,14 @@
 ---
 routes:
   - method: "get"
+    uri: "/"
+    controller: "\\Mpwar16App\\Controllers\\HomeController"
+    function: "index"
+  - method: "post"
+    uri: "/"
+    controller: "\\Mpwar16App\\Controllers\\HomeController"
+    function: "save"
+  - method: "get"
     uri: "/users"
     controller: "\\Mpwar16App\\Controllers\\UserController"
     function: "index"
